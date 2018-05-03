@@ -20,7 +20,6 @@ void setup() {
   Header = createFont("DejaVu Sans Bold", 32);
 }
 
-void draw() {
   /*
   textFont(Normal);
   text("test", width=55, height=55);
@@ -30,4 +29,14 @@ void draw() {
   
   example of how to add text
   */
+  
+void draw() {
+  rectMode(CENTER);
+  
+  //card base
+  stroke(0, 0, 0);
+  strokeWeight(1);
+  fill(246, 212, 44);
+  rect(161, 225, 300, 425, 7);
+  
 }
