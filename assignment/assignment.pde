@@ -23,7 +23,7 @@ void setup() {
   
   //fonts
   Normal = createFont("DejaVu Sans Condensed", 32);
-  Header = createFont("DejaVu Sans Bold", 32);
+  Header = createFont("DejaVu Sans Bold", 22);
 }
 
   /*
@@ -54,5 +54,19 @@ void draw() {
   
   //image
   image(Pikachu, 161, 140, 241, 167);
+  
+  //top text
+  fill(0, 0, 0);
+  textFont(Header);
+  text("Pikachu", width=31, height=47);
+  
+  textFont(Normal);
+  textSize(12);
+  text("Basic Pokemon", width=31, height=25);
+  
+  fill(181, 66, 48);
+  textFont(Header);
+  textSize(20);
+  text("50 HP", width=220, height=47);
   
 }
