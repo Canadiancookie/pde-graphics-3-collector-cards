@@ -6,14 +6,20 @@
  * 
  */
  
-//declare fonts
+//fonts
 PFont Normal;
 PFont Header;
 String[] fontList = PFont.list();
- 
+
+//images
+PImage Pikachu;
+
 void setup() {
   size(322, 450); //size of canvas
   background(35,35,35); //background color (rgb)
+  
+  Pikachu = loadImage("pikachu.png");
+  
   
   //fonts
   Normal = createFont("DejaVu Sans Condensed", 32);
@@ -32,11 +38,21 @@ void setup() {
   
 void draw() {
   rectMode(CENTER);
+  imageMode(CENTER);
   
   //card base
   stroke(0, 0, 0);
   strokeWeight(1);
   fill(246, 212, 44);
   rect(161, 225, 300, 425, 7);
+  
+  //image border
+  stroke(211, 174, 8);
+  strokeWeight(15);
+  fill(0, 0, 0);
+  rect(161, 140, 241, 167);
+  
+  //image
+  image(Pikachu, 161, 140, 241, 167);
   
 }
