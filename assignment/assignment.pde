@@ -74,4 +74,22 @@ void draw() {
   textFont(Normal);
   textSize(12);
   text("Mouse Pokemon. Length: 1'4\", Weight: 13 lbs.", width=38, height=245);
+  
+  //ability headers
+  textFont(Header);
+  textSize(18);
+  text("Spark", width=45, height=285);
+  textSize(20);
+  text("20", width=270, height=315);
+  
+  //ability body
+  textFont(Normal);
+  textSize(12);
+  text("If your opponent has any", width=110, height=285);
+  text("Benched Pokemon, choose 1 of them", width=45, height=300);
+  text("and this attack does 10 damage to it.", width=45, height=315);
+  text("(Don't apply Weakness and Resistance", width=45, height=330);
+  text("for Benched Pokemon.)", width=45, height=345);
+  
+
 }
