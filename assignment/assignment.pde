@@ -69,4 +69,9 @@ void draw() {
   textSize(20);
   text("50 HP", width=220, height=47);
   
+  //body text
+  fill(0, 0, 0);
+  textFont(Normal);
+  textSize(12);
+  text("Mouse Pokemon. Length: 1'4\", Weight: 13 lbs.", width=38, height=245);
 }
