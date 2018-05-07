@@ -25,16 +25,6 @@ void setup() {
   Normal = createFont("DejaVu Sans Condensed", 32);
   Header = createFont("DejaVu Sans Bold", 22);
 }
-
-  /*
-  textFont(Normal);
-  text("test", width=55, height=55);
-  
-  textFont(Header);
-  text("test2", width=55, height =85);
-  
-  example of how to add text
-  */
   
 void draw() {
   rectMode(CENTER);
@@ -44,7 +34,7 @@ void draw() {
   stroke(0, 0, 0);
   strokeWeight(1);
   fill(246, 212, 44);
-  rect(161, 225, 300, 425, 7);
+  rect(161, 225, 310, 435, 7);
   
   //image border
   stroke(211, 174, 8);
@@ -91,5 +81,25 @@ void draw() {
   text("(Don't apply Weakness and Resistance", width=45, height=330);
   text("for Benched Pokemon.)", width=45, height=345);
   
-
+  //line
+  stroke(0, 0, 0);
+  strokeWeight(1.5);
+  line(25, 370, 300, 370);
+  
+  //bottom text
+  textFont(Normal);
+  textSize(10);
+  text("weakness", width=30, height=381);
+  text("resistance", width=135, height=381);
+  text("retreat cost", width=240, height=381);
+  
+  text("When several of these Pokemon gather, their electricity", width=30, height=410);
+  text("can build and cause lightning storms. LV.14 #25", width=30, height=420);
+  
+  textSize(9);
+  text("Illus. Ken Sugimori", width=15, height=438);
+  text("1995, 96, 98 Nintendo, GAMEFREAK", width=110, height=438);
+  textFont(Header);
+  textSize(9);
+  text("60/64", width=285, height=438);
 }
