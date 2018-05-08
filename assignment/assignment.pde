@@ -2,7 +2,7 @@
  * Graphics Assignment 3
  * by Brayden S.
  * 
- * 
+ * Draws Pikachu card
  * 
  */
  
